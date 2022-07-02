@@ -1,0 +1,10 @@
+OOPS
+
+Classes and Objects (Encapsulation)
+    Person
+	Reference vs Instance
+	Swap1 - p1 & p2 swap via temp
+	Swap2 - p1 and p2 swap via properties
+	Games in Swap2 - new p1 and p2
+Miscellaneous
+    static & non-static - BankAccount story
