@@ -1,3 +1,5 @@
+package L001;
+
 import java.io.*;
 
 class Main {
