@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 // probelm in this code
-class Main {
+class f2 {
   public static void main(String[] args) throws NumberFormatException, IOException {
     Car[] cars = new Car[5];
     cars[0] = new Car(200, 100, "A");
@@ -13,9 +13,11 @@ class Main {
 
     ArrayList<Car> l1 = new ArrayList<>();
     ArrayList<Car> l2 = new ArrayList<>();
+    ArrayList<Car> l3 = new ArrayList<>();
     for(Car car: cars){
       l1.add(car);
       l2.add(car);
+      l3.add(car);
     }
 
     Collections.sort(l1);
@@ -23,6 +25,9 @@ class Main {
 
     Collections.sort(l2, new CarSpeedComparator());
     System.out.println(l2);
+
+    Collections.sort(l3, Collections.reverseOrder(new CarSpeedComparator()));
+    System.out.println(l3);
   }
 
   static class Car implements Comparable<Car> {
