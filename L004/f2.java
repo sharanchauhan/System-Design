@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 // probelm in this code
-class f2 {
+class Main {
   public static void main(String[] args) throws NumberFormatException, IOException {
     Car[] cars = new Car[5];
     cars[0] = new Car(200, 100, "A");
@@ -20,6 +20,9 @@ class f2 {
 
     Collections.sort(l1);
     System.out.println(l1);
+
+    Collections.sort(l2, new CarSpeedComparator());
+    System.out.println(l2);
   }
 
   static class Car implements Comparable<Car> {
@@ -43,7 +46,13 @@ class f2 {
     // regular implementations is this.p - other.p => small value of p is smaller object
 
     public int compareTo(Car other){
-      return this.speed - other.speed;
+      return other.price - this.price;
+    }
+  }
+
+  static class CarSpeedComparator implements Comparator<Car> {
+    public int compare(Car c1, Car c2){
+      return c1.speed - c2.speed;
     }
   }
 }
