@@ -6,7 +6,7 @@ public class Test {
 		// TODO Auto-generated method stub
 		
 		Singleton s1 = Singleton.getTheSingleInstance();
-//		Now when we are calling through s2 then inst will not be null therefore it will return the same object as s1
+//		Now when we are calling through s2 then it will not be null therefore it will return the same object as s1
 		Singleton s2 = Singleton.getTheSingleInstance();
 		
 		System.out.println(s1 == s2);
