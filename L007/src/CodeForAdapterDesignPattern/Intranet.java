@@ -4,7 +4,7 @@ import java.util.List;
 
 // Data consumer
 public class Intranet {
-	IPhoneListSource source;
+	IPhoneListSource source; // Loosely coupled, any adapter which implements IPhoneListSource interface can be stored in this reference
 	
 	public Intranet(IPhoneListSource source) {
 		this.source = source;
