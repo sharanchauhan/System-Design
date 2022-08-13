@@ -30,11 +30,6 @@ public class DriverforEqualsAndHashCode {
 		System.out.println(points[6].equals(points[9]));
 		System.out.println(points[0].equals(points[9]));
 		
-		
-
-		
-		
-		
 		HashMap<Point, Integer> map = new HashMap<>();
 		for(Point p: points) {
 			if(map.containsKey(p)) {
