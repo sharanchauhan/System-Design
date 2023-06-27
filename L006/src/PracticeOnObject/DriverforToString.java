@@ -6,7 +6,7 @@ public class DriverforToString {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Car c = new Car("A", 100, 200);
+		// Car c = new Car("A", 100, 200);
 		Car c1 = null;
 		System.out.println(c1);
 		
